@@ -1,5 +1,5 @@
 import Image from "next/image";
-import photoIA from "../public/";
+import photoIA from "../public";
 
 export default function Home() {
   return (
