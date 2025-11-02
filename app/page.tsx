@@ -1,3 +1,6 @@
+import Image from "next/image";
+import photoIA from "../public/";
+
 export default function Home() {
   return (
     <main id="accueil" className="mx-auto max-w-5xl px-6">
@@ -27,29 +30,14 @@ export default function Home() {
             </div>
           </div>
           <div className="relative mx-auto sm:mx-0 w-48 h-48 sm:w-56 sm:h-56">
-            {
-              <img
-                src="photo-IA.JPG"
-                alt="Keliane Kossa"
-                className="rounded-full"
-              />
-            }
-            <div className="absolute inset-0 rounded-full bg-gradient-to-br from-beige-100 to-sand-200 border border-beige" />
-            <svg
-              viewBox="0 0 200 200"
-              className="absolute inset-2 text-brown/20"
-              aria-hidden
-            >
-              <path
-                className="fill-brown"
-                d="M100 100 m-80 0 a80 80 0 1 0 160 0 a80 80 0 1 0 -160 0"
-                fill="currentColor"
-                opacity="0.08"
-              />
-            </svg>
-            <div className="absolute inset-0 flex items-center justify-center text-brown-strong/70 text-sm">
-              Photo ici
-            </div>
+            <Image
+              src={photoIA}
+              alt="Keliane Kossa"
+              fill
+              sizes="(min-width: 640px) 14rem, 12rem"
+              className="rounded-full object-cover border border-beige shadow-sm"
+              priority
+            />
           </div>
         </div>
       </section>
