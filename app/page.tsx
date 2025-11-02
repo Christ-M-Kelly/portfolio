@@ -1,5 +1,5 @@
 import Image from "next/image";
-import photo from "../public/next.svg"
+import photo from "../public/images/photo-IA.JPG";
 
 export default function Home() {
   return (
