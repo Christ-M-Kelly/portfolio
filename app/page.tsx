@@ -1,5 +1,5 @@
 import Image from "next/image";
-import photoIA from "../public";
+import photo from "../public/next.svg"
 
 export default function Home() {
   return (
@@ -31,7 +31,7 @@ export default function Home() {
           </div>
           <div className="relative mx-auto sm:mx-0 w-48 h-48 sm:w-56 sm:h-56">
             <Image
-              src={photoIA}
+              src={photo}
               alt="Keliane Kossa"
               fill
               sizes="(min-width: 640px) 14rem, 12rem"
