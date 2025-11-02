@@ -1,5 +1,4 @@
 import Image from "next/image";
-import photo from "../public/images/photo-IA.JPG";
 
 export default function Home() {
   return (
@@ -31,7 +30,7 @@ export default function Home() {
           </div>
           <div className="relative mx-auto sm:mx-0 w-48 h-48 sm:w-56 sm:h-56">
             <Image
-              src={photo}
+              src="/images/photo-IA.JPG"
               alt="Keliane Kossa"
               fill
               sizes="(min-width: 640px) 14rem, 12rem"
