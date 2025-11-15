@@ -31,14 +31,24 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="fr">
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+      <body
+        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+      >
         <header className="sticky top-0 z-40 backdrop-blur supports-[backdrop-filter]:bg-white/60 bg-white/80 dark:bg-[color:var(--beige-50)]/80 border-b border-beige">
           <div className="mx-auto max-w-5xl px-6 py-3 flex items-center justify-between">
-            <a href="#accueil" className="text-sm font-semibold text-brown-strong">Portfolio</a>
+            <a href="/" className="text-sm font-semibold text-brown-strong">
+              Portfolio
+            </a>
             <nav className="hidden sm:flex items-center gap-6 text-sm">
-              <a href="#projets" className="hover:text-brown">Projets</a>
-              <a href="#a-propos" className="hover:text-brown">À propos</a>
-              <a href="#contact" className="btn-coffee">Contact</a>
+              <a href="/projets" className="hover:text-brown">
+                Projets
+              </a>
+              <a href="/#a-propos" className="hover:text-brown">
+                À propos
+              </a>
+              <a href="/#contact" className="btn-coffee">
+                Contact
+              </a>
             </nav>
           </div>
         </header>
